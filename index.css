@@ -32,6 +32,7 @@ nav ul li a:hover {
 section {
     padding: 60px 20px;
     height:fit-content;
+    width: auto;
 }
 #home {
     background-color:black; 
