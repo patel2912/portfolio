@@ -31,7 +31,7 @@ nav ul li a:hover {
 }
 section {
     padding: 60px 20px;
-    height:auto;
+    height:fit-content;
 }
 #home {
     background-color:black; 
@@ -49,7 +49,7 @@ p{
     font-size: 20px;
 }
 img{
-    height:400px;
+    height: auto;
     width:350px;
     vertical-align: baseline;
    
