@@ -7,7 +7,7 @@ body {
 }
 nav {
     background-color: black;
-    position: relative;
+    position:absolute;
     width: 100%;
     top: 0;
     z-index: 1000;
