@@ -26,7 +26,7 @@
             
 
     <section id="home">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 intro">
                     <p>Hello </p>
@@ -43,7 +43,7 @@
     
                 </div>
                 <div class="col-md-6">
-                    <img src="C:\Users\VikiP\OneDrive\Pictures\My Picture\_MGL70481.jpg" alt="Italian Trulli">
+                    <img id="img" src="C:\Users\VikiP\OneDrive\Pictures\My Picture\_MGL70481.jpg" alt="Italian Trulli">
                    
                 </div>
             </div>
@@ -54,9 +54,9 @@
     </section>
 
     <section>
-        <div class="container" id="about">
-            <h2 class="text-center">About Me</h2>
-            <p>
+        <h2 class="text-center" >About Me</h2> 
+        <div class="container-fluid" id="about"> 
+            <p class="text-justify" style="padding: 10px ;">
                
                 I'm Viki Patel, an IT professional with a Master's degree from
                  Ganpat University. I interned as a Laravel Developer at 
@@ -69,23 +69,37 @@
                    Textile Management and College Management Systems.
                     Fluent in Gujarati, Hindi, and English, I also volunteer for 
                     BAPS, managing events and demonstrating my adaptability and 
-                    teamwork skills. </p><br>
+                    teamwork skills. </p>
               
         </div>
         
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
+        <h3 class="text-center">Projects</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm" >
+                    <h4 id="pro-title">Textile Management System</h4>
+        
+                    <img class="img" id="pro-img" src="D:\portfolio\image.png" alt="Italian Trulli">
+                    
+                </div>
+                <div class="col-sm" >
+                    <h4 id="pro-title">Portfolio</h4>
+                  
+                    <img class="img" id="pro-img" src="D:\portfolio\image2.png" alt="Italian Trulli" style="height: 300px; width: auto; ">
+                </div>
+                <div class="col-sm" >
+                    <h4 id="pro-title" >Textile Management System</h4>
+                   
+                    <img class="img" id="pro-img" src="D:\portfolio\image.png" alt="Italian Trulli">
+                </div>
+            </div>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
-        </div>
-        <!-- Add more projects as needed -->
+        
+  
+       
     </section>
 
     <section id="contact">
