@@ -6,40 +6,38 @@ ol {
   padding: 0;
   width: 100%;
   height: auto;
-  background: linear-gradient(270deg, rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 255, 0.3), rgba(255, 0, 0, 0.3)); /* Gradient combination with lower opacity */
-  background-size: 600% 600%; /* Adjust the size to be larger than the viewport */
+  background: linear-gradient(rgba(96, 96, 221, 0.3), rgb(207, 187, 187));
   color: white;
-  animation: gradientMove 30s linear infinite;
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 600% 50%;
-  }
-}
-
-body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
+.text-hover {
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.text-hover:hover {
+  color: #ff6347;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
 .navbar {
+  position: fixed;
   top: 0;
   width: 100%;
-  margin: 0;
+  background-color: black;
+  opacity: 1.10;
+  z-index: 10;
 }
 
 .navbar-menu {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-menu li {
@@ -49,21 +47,20 @@ body {
 .navbar-menu li a {
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 20px;
   text-decoration: none;
   transition: 1.2s;
 }
 
 .navbar-menu li a:hover {
-  color: black;
+  color: yellow;
   text-decoration: underline;
   transform: scale(1.25);
 }
 
 section {
-    padding-top: 0px;
   padding: 2rem;
+  margin-top: 60px; /* Offset for fixed navbar */
 }
 
 .container {
@@ -73,16 +70,16 @@ section {
 }
 
 #home {
-  align-items: center;
   padding-top: 100px;
+  text-align: center;
 }
 
 .intro {
-  margin-top: 100px;
+  margin-top: 200px;
+  text-align: justify;
 }
 
 #btn {
-
   color: brown;
   border-color: white;
   border-width: 2px;
@@ -90,8 +87,8 @@ section {
 }
 
 #btn:hover {
-  background-color: brown;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: large;
 }
 
@@ -109,19 +106,20 @@ section {
   color: black;
   border-radius: 20px;
   font-size: large;
+  text-align: justify;
+  padding: 1rem;
 }
 
 .container-fluid .row .col-sm {
   border: 2px solid white;
-  border-radius: 20px;
   margin: 2px;
+  border-radius: 20px;
   transition: background-color 1s, color 1s, transform 1s;
 }
 
 .container-fluid .row .col-sm:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid white;
+  background-color: black;
+  color: white;
   transform: scale(1.05);
 }
 
@@ -137,8 +135,83 @@ section {
   margin: 10px;
   text-align: center;
 }
-table tr td{
-    border-color: white;
-    border-radius: 10px;
+
+table tr td {
+  border-color: white;
 }
 
+#table-info {
+  margin-top: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style for cards */
+.card {
+  width: 100%;
+  height:400px;
+  padding: 40px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: inherit; /* Keeps the background color as it is */
+}
+
+/* Style for the heading */
+h2 {
+  margin-top: 0;
+}
+
+/* Style for social media links */
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.social-links li {
+  margin: 5px;
+}
+
+.social-links li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+}
+
+.social-links li a i {
+  margin-right: 5px;
+  padding: 5px;
+  /* Black border around the icon */
+  border-radius: 5px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
