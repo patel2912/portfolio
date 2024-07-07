@@ -6,30 +6,27 @@ ol {
   padding: 0;
   width: 100%;
   height: auto;
-  background: linear-gradient(rgba(96, 96, 221, 0.3), rgb(207, 187, 187));
+  background: #708090;
   color: white;
   font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 
-.text-hover {
-  color: #000;
-  transition: all 0.3s ease;
+.title {
+  font-size: small;
 }
 
-.text-hover:hover {
-  color: #ff6347;
-  text-decoration: underline;
-  transform: scale(1.1);
+.name {
+  color: #E0AC69;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: black;
-  opacity: 1.10;
-  z-index: 10;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-menu {
@@ -37,6 +34,7 @@ ol {
   display: flex;
   justify-content: space-around;
   padding: 0;
+  background-color: #333;
   margin: 0;
 }
 
@@ -53,41 +51,45 @@ ol {
 }
 
 .navbar-menu li a:hover {
-  color: yellow;
+  color: #E0AC69;
   text-decoration: underline;
   transform: scale(1.25);
 }
+
+
 
 section {
   padding: 2rem;
   margin-top: 60px; /* Offset for fixed navbar */
 }
 
-.container {
-  width: 80%;
+.container-fluid {
+  width: 90%;
   margin: auto;
   overflow: hidden;
 }
 
 #home {
-  padding-top: 100px;
   text-align: center;
 }
 
 .intro {
-  margin-top: 200px;
   text-align: justify;
+}
+
+.col-md-6.intro {
+  padding-top: 180px;
 }
 
 #btn {
   color: brown;
-  border-color: white;
+  border-color: #E0AC69;
   border-width: 2px;
   transition: 0.5s;
 }
 
 #btn:hover {
-  background-color: black;
+  background-color: #333;
   color: white;
   font-size: large;
 }
@@ -102,25 +104,11 @@ section {
 }
 
 #about {
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  font-size: large;
-  text-align: justify;
-  padding: 1rem;
-}
-
-.container-fluid .row .col-sm {
-  border: 2px solid white;
-  margin: 2px;
-  border-radius: 20px;
-  transition: background-color 1s, color 1s, transform 1s;
-}
-
-.container-fluid .row .col-sm:hover {
-  background-color: black;
   color: white;
-  transform: scale(1.05);
+  margin: 20px auto;
+  border-radius: 8px;
+  font-size: large;
+  text-align:justify;
 }
 
 .img {
@@ -134,84 +122,199 @@ section {
 #pro-title {
   margin: 10px;
   text-align: center;
+  color: white;
 }
 
-table tr td {
-  border-color: white;
+#projects .col-sm .card {
+  background-color: #333;
+  transition: background-color 0.20s; /* Transition for background color change */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+table th, table td {
+  border: 1px solid white;
+  padding: 10px;
 }
 
 #table-info {
   margin-top: 30px;
+  overflow-x: auto;
 }
 
-input, textarea {
-  width: 100%;
-  border-radius: 20px;
-  padding: 10px;
-  margin-bottom: 10px;
+#technology .row .card{
+  margin:10px;
+  padding:10px;
+  text-align: center;
+  transition: background-color 0.3s ease-out; 
+}
+#technology .row .card:hover{
+  background-color: #E0AC69;
+}
+#technology img{
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+  
+  
+}
+#technology .row .card h4{
+  padding-top: 10px;
+  padding-bottom: 0px;
 }
 
 /* Style for cards */
 .card {
   width: 100%;
-  height:400px;
+  height: auto;
   padding: 40px;
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  background-color: inherit; /* Keeps the background color as it is */
+  text-align: justify;
+  background-color: #333;
+  color: white;
 }
 
 /* Style for the heading */
-h2 {
+.h2 {
   margin-top: 0;
+  color: #E0AC69;
 }
 
 /* Style for social media links */
-.social-links {
-  list-style-type: none;
-  padding: 0;
+.social-media-links {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
+  flex-direction: column;
+  background-color: #333;
+  padding: 10px;
 }
 
-.social-links li {
-  margin: 5px;
-}
-
-.social-links li a {
+.social-media-links a {
+  color: white;
   text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  display: flex;
-  align-items: center;
-  background-color: inherit;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+  background-color: #555;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 24px;
 }
 
-.social-links li a i {
-  margin-right: 5px;
-  padding: 5px;
-  /* Black border around the icon */
-  border-radius: 5px;
+.social-media-links a:hover {
+  background-color: #777;
 }
 
-/* Media Queries for responsiveness */
+.content {
+  margin-left: 80px; /* Adjust this value based on the width of the social media links section */
+  padding: 20px;
+}
+
+#nav-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .navbar-menu {
-    flex-direction: column;
-    align-items: center;
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
   }
 
-  .container {
-    width: 95%;
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+  }
+
+  #nav-toggle {
+    display: block;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .container-fluid {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .intro {
+    padding: 0;
+  }
+
+  .row {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .card {
-    width: 90%;
+    padding: 20px;
   }
+
+  table {
+    width: 100%;
+    table-layout: auto;
+  }
+
+  table th, table td {
+    padding: 5px;
+    white-space: nowrap; /* Prevent content from wrapping */
+  }
+
+  table th {
+    padding-bottom: 10px; /* Add extra space below th */
+  }
+
+  table tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Add space between table rows */
+  }
+
+  table tr:not(:last-child) {
+    margin-bottom: 10px; /* Add space between table rows except the last one */
+  }
+
+  .about {
+    padding: 20px;
+    margin: 10px auto;
+  }
+}
+
+
+
+#nav-toggle:checked + .navbar-menu {
+  display: flex;
 }

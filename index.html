@@ -10,91 +10,110 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="script.js"></script>
-
-
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <div class="navbar">
+            <button id="nav-toggle" class="nav-toggle">Menu</button>
             <ul class="navbar-menu">
-                <li class="navitem"><a href="#home">Home</a></li>
-                <li class="navitem" ><a href="#about">About</a></li>
-                <li class="navitem" ><a href="#projects">Projects</a></li>
-                <li class="navitem"><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-
+        </div>
     </header>
-    <div class="container">
-      
-                
-    
-        <section id="home">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 intro">
-                        <p>Hello </p>
-                        <h1 class="title">I'm Viki Patel</h1>
-                       
-                        I hold an M.Sc. in IT with a CGPA of 8.34 and a B.Sc. in IT with
-                        a CGPA of 7.58. I gained hands-on experience as a Laravel 
-                        developer during my internship and volunteer with the BAPS 
-                        organization. My academic background, practical skills, and 
-                        community service reflect my dedication to the IT field.</p>
-                       <a href="images/Viki_Patel-CV.pdf" class="btn" id="btn" download="Viki_Patel-CV.pdf">Download Resume</a>
-    
-                           
-                     
+  
+    <div class="social-media-links">
+        <a href="https://www.linkedin.com/in/vikivpatel29122001/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.hackerrank.com" target="_blank"><i class="fab fa-hackerrank"></i></a>
+        <a href="https://stackoverflow.com" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:vikipatel29122001@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
         
-                    </div>
-                    <div class="col-md-6">
-                        <img id="img" src="images/IMG-20240511-WA0061.jpg" alt="Italian Trulli">
-                       
-                    </div>
+   
+    <div class="container-fluid">
+        <section id="home">
+            <div class="row">
+                <div class="col-md-6 intro">
+                    <h2><span class="title">I am </span><span class="name">Viki Patel</span></h2>
+                    <h4>Laravel Developer & Frontend Developer</h4>
+                    <a href="images/Viki_Patel-CV.pdf" class="btn" id="btn" download="Viki_Patel-CV.pdf">Download Resume</a>
                 </div>
-    
+                <div class="col-md-6">
+                    <img id="img" src="images/IMG-20240511-WA0061.jpg" alt="Profile Picture">
+                </div>
             </div>
-           
-            
         </section>
     
-        <section>
-            <h2 class="text-center" >About Me</h2> 
-            <div class="container-fluid" id="about"> 
-                <p class="text-justify" style="padding: 10px ;">
-                   
+        <section id="about">
+            <h2 class="h2">About Me</h2>
+            <div class="card">
+                <p class="text-justify" style="padding: 10px;">
                     I'm Viki Patel, an IT professional with a Master's degree from
-                     Ganpat University. I interned as a Laravel Developer at 
-                     PrecogTech Solution, Mumbai, enhancing my skills in database 
-                     design, Blade templates, and front-end technologies. 
-                     At Pathsala Education Classes, I managed exams and seating 
-                     arrangements, developing strong organizational skills.
-                      My expertise spans HTML, CSS, Bootstrap, jQuery, SQL, PHP, 
-                      Laravel, WordPress, and UI/UX design. I’ve worked on projects like
-                       Textile Management and College Management Systems.
-                        Fluent in Gujarati, Hindi, and English, I also volunteer for 
-                        BAPS, managing events and demonstrating my adaptability and 
-                        teamwork skills. </p>
-                  
+                    Ganpat University. I interned as a Laravel Developer at 
+                    PrecogTech Solution, Mumbai, enhancing my skills in database 
+                    design, Blade templates, and front-end technologies. 
+                    At Pathsala Education Classes, I managed exams and seating 
+                    arrangements, developing strong organizational skills.
+                    My expertise spans HTML, CSS, Bootstrap, jQuery, SQL, PHP, 
+                    Laravel, WordPress, and UI/UX design. I’ve worked on projects like
+                    Textile Management and College Management Systems.
+                    Fluent in Gujarati, Hindi, and English, I also volunteer for 
+                    BAPS, managing events and demonstrating my adaptability and 
+                    teamwork skills.
+                </p>
             </div>
-            
         </section>
+        <section id="technology">
+            <h2 class="h2">Tools & Technology</h2>
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <img src="images/htmllogo.png" id="tech" class="logo" style="size: 10px;">
+                    <h4>HTML</h4>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="images/htmllogo.png" id="tech">
+                    <h4>HTML</h4>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="images/htmllogo.png" id="tech">
+                    <h4>HTML</h4>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img src="images/htmllogo.png" id="tech">
+                    <h4>HTML</h4>
+                </div>
+            </div>
+        </div>
+        </section>
+        
     
         <section id="projects">
-            <h3 class="text-center">Projects</h3>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm" >
+            <h2 class="h2">Projects</h2>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
                         <h4 id="pro-title">Textile Management System</h4>
                         <div class="row">
                             <div class="col-sm-3">
-                                <img class="img" id="pro-img" src="images/image.png" alt="Italian Trulli">
+                                <img class="img" id="pro-img" src="images/image.png" alt="Project Image">
                             </div>
                             <div class="col-sm-9" id="table-info">
                                 <table class="table table-dark table-striped table-bordered table-hover">
                                     <tr>
                                         <th>Front-End Technology</th>
-                                        <td>HTML,CSS,BOOTSTRAP</td>
+                                        <td>HTML, CSS, Bootstrap</td>
                                     </tr>
                                     <tr>
                                         <th>Back-End Technology</th>
@@ -102,126 +121,69 @@
                                     </tr>
                                     <tr>
                                         <th>Tools</th>
-                                        <td>Laravel Tinker,VSCODE</td>
+                                        <td>Laravel Tinker, VSCode</td>
                                     </tr>
                                 </table>
-
                             </div>
                         </div>
-            
-                       
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" >
-                        <h4 id="pro-title">Textile Management System</h4>
-                        <div class="row">
-                            
-                            <div class="col-sm-9" id="table-info">
-                                <table class="table table-dark table-striped table-bordered table-hover">
-                                    <tr>
-                                        <th>Front-End Technology</th>
-                                        <td>HTML,CSS,BOOTSTRAP</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Back-End Technology</th>
-                                        <td>Laravel</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tools</th>
-                                        <td>Laravel Tinker,VSCODE</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-                            <div class="col-sm-3">
-                                <img class="img" id="pro-img" src="images/image.png" alt="Italian Trulli">
-                            </div>
-                        </div>
-            
-                       
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" >
-                        <h4 id="pro-title">Textile Management System</h4>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img class="img" id="pro-img" src="images/image.png" alt="Italian Trulli">
-                            </div>
-                            <div class="col-sm-9" id="table-info">
-                                <table class="table table-dark table-striped table-bordered table-hover">
-                                    <tr>
-                                        <th>Front-End Technology</th>
-                                        <td>HTML,CSS,BOOTSTRAP</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Back-End Technology</th>
-                                        <td>Laravel</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tools</th>
-                                        <td>Laravel Tinker,VSCODE</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-                           
-                        </div>
-            
-                       
-                        
                     </div>
                 </div>
             </div>
-            
-      
-           
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <h4 id="pro-title">College Management System</h4>
+                        <div class="row">
+                            <div class="col-sm-9" id="table-info">
+                                <table class="table table-dark table-striped table-bordered table-hover">
+                                    <tr>
+                                        <th>Front-End Technology</th>
+                                        <td>HTML, CSS, Bootstrap</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Back-End Technology</th>
+                                        <td>Laravel</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tools</th>
+                                        <td>Laravel Tinker, VSCode</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="img" id="pro-img" src="images/image.png" alt="Project Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     
         <section id="contact">
-            <h2 style="text-align: center;">Contact</h2>
+            <h2 class="h2">Contact</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card personal-info">
                         <h2>Personal Information</h2>
-                        <p style="text-align: left;">Name: Viki Patel</p>
-                        <p style="text-align: left;">Contact Number: +91 8160158477</p>
-                        <p style="text-align: left;">Email: vikipatel29122001@gmail.com</p>
-                        <ul class="social-links">
-                            <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
-                        </ul>
+                        <p>Name: Viki Patel</p>
+                        <p>Contact Number: +91 8160158477</p>
+                        <p>Email: vikipatel29122001@gmail.com</p>
                     </div>
-
                 </div>
                 <div class="col-md-6">
                     <div class="card address-map">
                         <h2>Address and Map</h2>
-                        <p style="text-align: left;">Address:<br>A-404 Unique Essenza,<br> Opp Kargil Petrol Pump,<br>Behind Audi Showroom,<br>Sola S.G Highway</p>
+                        <p>Address:<br> A-404 Unique Essenza,<br> Opp Kargil Petrol Pump,<br>Behind Audi Showroom,<br>Sola S.G Highway</p>
                         <!-- Replace the iframe src with your actual Google Maps embed URL -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44764.07309076121!2d-0.17494649999999999!3d51.5165903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760547be4d3d23%3A0x8334e32e20e1a8f9!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1582696741980!5m2!1sen!2suk" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
-
                 </div>
-              
-            
-                
-                
-
             </div>
-           
         </section>
     
         <footer>
-            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2024 Viki Patel. All rights reserved.</p>
         </footer>
-    
-
     </div>
 </body>
-
 </html>
