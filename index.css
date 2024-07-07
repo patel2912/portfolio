@@ -224,6 +224,10 @@ table th, table td {
 }
 
 @media (max-width: 768px) {
+  .content {
+    margin-left: 80px; /* Adjust this value based on the width of the social media links section */
+    padding: 20px;
+  }
   html, body {
     margin: 0;
     padding: 0;
