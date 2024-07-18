@@ -4,60 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <button id="nav-toggle" class="nav-toggle">Menu</button>
-            <ul class="navbar-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#projects">Projects</a></li>
 
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<div class="navbar">
+    <button id="nav-toggle" class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <img src="image/IMG-20240511-WA0197.jpg" id="img">
+    <ul id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tool">Tools & Technology</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#education">Contact</a></li>
+    </ul>
+</div>
+
+<div id="content">
+    <div id="home">
+        <div class="image-container">
+            <img src="image/WebDeveloper.jpg" class="img">
+            <div class="overlay">I'm a Web Developer <br>Web Designer</div>
         </div>
-    </header>
-  
-    <div class="social-media-links">
-        <a href="https://www.linkedin.com/in/vikivpatel29122001/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.hackerrank.com" target="_blank"><i class="fab fa-hackerrank"></i></a>
-        <a href="https://stackoverflow.com" target="_blank"><i class="fab fa-stack-overflow"></i></a>
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="mailto:vikipatel29122001@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
-        
-   
-    <div class="container-fluid">
-        <section id="home">
-            <div class="row">
-                <div class="col-md-6 intro">
-                    <p> <span class="re">I am</span> <span class="title">Viki Patel</span></p>
-                    <p>Laravel Developer & <br>Frontend Developer</p>
-                    <a href="images/Viki_Patel-CV.pdf" class="btn btn-lg" id="btn" download="Viki_Patel-CV.pdf">Download Resume</a>
-                </div>
-                <div class="col-md-6">
-                    <img id="img" src="images/IMG-20240511-WA0061.jpg" alt="Profile Picture">
-                </div>
+    <div id="about">
+        <h3>About</h3>
+        <div class="row">
+            
+            <div class="col-sm-4">
+                <img src="image/IMG-20240511-WA0197.jpg" class="about-image">
             </div>
-        </section>
-    
-        <section id="about">
-            <div class="title-container">
-                <div class="line"></div>
-                <div class="title"><h2 class="h2">About Me</h2></div>
-                <div class="line"></div>
-            </div>
-            <div class="card">
-                <p class="text-justify" style="padding: 10px;">
+            <div class="col-sm-8">
+                <p class="text-white" style="text-align: justify;">
                     I'm Viki Patel, an IT professional with a Master's degree from
                     Ganpat University. I interned as a Laravel Developer at 
                     PrecogTech Solution, Mumbai, enhancing my skills in database 
@@ -71,222 +53,232 @@
                     BAPS, managing events and demonstrating my adaptability and 
                     teamwork skills.
                 </p>
-            </div>
-        </section>
-        <section id="technology">
-            <div class="title-container">
-                <div class="line"></div>
-                <div class="title"><h2 class="h2">Tools & Technology</h2></div>
-                <div class="line"></div>
-            </div>
-            
-        <div class="row">
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/htmllogo.png" id="tech" class="center" style="size: 10px;">
-                    <h4>HTML</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/csslogo.jpg" id="tech" class="center">
-                    <h4>CSS</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/bootstraplogo.png" id="tech" class="center">
-                    <h4>BOOTSTRAP</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/phplogo.png" id="tech" class="center">
-                    <h4>PHP</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/laravellogo.png" id="tech" class="center">
-                    <h4>LARAVEL</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/jquerylogo.png" id="tech" class="center">
-                    <h4>JQUERY</h4>
-                </div>
-            </div>
-       
 
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/sqllogo.png" id="tech" class="center">
-                    <h4>SQL</h4>
-                </div>
-            </div>
-        
-       
-   
-            <div class="col-sm">
-                    <div class="card">
-                        <img src="images/wordpresslogo.png" id="tech" class="center">
-                        <h4>WORDPRESS</h4>
-                    </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/uidesign.png" id="tech" class="center">
-                    <h4>UI DESIGN</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/officelogo.jpg" id="tech" class="center">
-                    <h4>MS-OFFICE</h4>
-                </div>
             </div>
         </div>
-        <div class="row">
-            
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/vscodelogo.png" id="tech" class="center">
-                    <h4>VS CODE</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/figmslogo.png" id="tech" class="center">
-                    <h4>FIGMA</h4>
-                </div>
-            </div>
-        
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/xampp logo.png" id="tech" class="center">
-                    <h4>XAMPP</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/wamplogo.png" id="tech" class="center">
-                    <h4>XAMPP</h4>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card">
-                    <img src="images/canvalogo.jpg" id="tech" class="center">
-                    <h4>CANVA</h4>
-                </div>
-            </div>
 
-        </div>
-       
-           
-        
-        
-        </section>
-        
-    
-        <section id="projects">
-          
-            <div class="title-container">
-                <div class="line"></div>
-                <div class="title">  <h2 class="h2">Projects</h2></div>
-                <div class="line"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card">
-                        <h4 id="pro-title">Textile Management System</h4>
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <img class="img" id="pro-img" src="images/image.png" alt="Project Image">
-                            </div>
-                            <div class="col-sm-9" id="table-info">
-                                <table class="table table-dark table-striped table-bordered table-hover">
-                                    <tr>
-                                        <th>Front-End Technology</th>
-                                        <td>HTML, CSS, Bootstrap</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Back-End Technology</th>
-                                        <td>Laravel</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tools</th>
-                                        <td>Laravel Tinker, VSCode</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card">
-                        <h4 id="pro-title">College Management System</h4>
-                        <div class="row">
-                            <div class="col-sm-9" id="table-info">
-                                <table class="table table-dark table-striped table-bordered table-hover">
-                                    <tr>
-                                        <th>Front-End Technology</th>
-                                        <td>HTML, CSS, Bootstrap</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Back-End Technology</th>
-                                        <td>Laravel</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tools</th>
-                                        <td>Laravel Tinker, VSCode</td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="col-sm-3">
-                                <img class="img" id="pro-img" src="images/image.png" alt="Project Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <section id="contact">
-            <div class="title-container">
-                <div class="line"></div>
-                <div class="title">  <h2 class="h2">Contact</h2></div>
-                <div class="line"></div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card personal-info">
-                        <h2>Personal Information</h2>
-                        <p>Name: Viki Patel</p>
-                        <p>Contact Number: +91 8160158477</p>
-                        <p>Email: vikipatel29122001@gmail.com</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card address-map">
-                        <h2>Address and Map</h2>
-                        <p>Address:<br> A-404 Unique Essenza,<br> Opp Kargil Petrol Pump,<br>Behind Audi Showroom,<br>Sola S.G Highway</p>
-                        <!-- Replace the iframe src with your actual Google Maps embed URL -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44764.07309076121!2d-0.17494649999999999!3d51.5165903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760547be4d3d23%3A0x8334e32e20e1a8f9!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1582696741980!5m2!1sen!2suk" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-        <footer>
-            <p>&copy; 2024 Viki Patel. All rights reserved.</p>
-        </footer>
     </div>
+        <div id="tool">
+            <h3>Tools & Technology</h3>
+            <div class="row">
+                    <div class="col-sm-6">
+                        <div class="html">
+                            <h4>HTML </h4>
+                            <div class="bar-container">
+                                <div class="bar">70%</div>
+                            </div>
+
+                        </div>
+                        <div class="html">
+                            <h4>CSS </h4>
+                            <div class="bar-container">
+                                <div class="bar">70%</div>
+                            </div>
+
+                        </div>
+                        <div class="html">
+                            <h4>BOOTSTRAP</h4>
+                            <div class="bar-container">
+                                <div class="bar">70%</div>
+                            </div>
+
+                        </div>
+                        <div class="javascript">
+                            <h4>JAVASCRIPT</h4>
+                            <div class="bar-container">
+                                <div class="bar">40%</div>
+                            </div>
+
+                        </div>
+                        <div class="jquery">
+                            <h4>JQUERY</h4>
+                            <div class="bar-container">
+                                <div class="bar">50%</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="react">
+                            <h4>REACT JS</h4>
+                            <div class="bar-container">
+                                <div class="bar">40%</div>
+                            </div>
+    
+                        </div>
+                        <div class="php">
+                            <h4>PHP</h4>
+                            <div class="bar-container">
+                                <div class="bar">70%</div>
+                            </div>
+    
+                        </div>
+                        <div class="laravel">
+                            <h4>Laravel</h4>
+                            <div class="bar-container">
+                                <div class="bar">60%</div>
+                            </div>
+    
+                        </div>
+                        <div class="laravel">
+                            <h4>SQL</h4>
+                            <div class="bar-container">
+                                <div class="bar">60%</div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                   
+                 
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="laravel">
+                        <h4>FIGMA </h4>
+                        <div class="bar-container">
+                            <div class="bar">60%</div>
+                        </div>
+
+                    </div>
+                    <div class="php">
+                        <h4>VSCODE</h4>
+                        <div class="bar-container">
+                            <div class="bar">70%</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="laravel">
+                        <h4>MICROSOFT WORD </h4>
+                        <div class="bar-container">
+                            <div class="bar">60%</div>
+                        </div>
+
+                    </div>
+                    <div class="laravel">
+                        <h4>MICROSOFT POWER POINT </h4>
+                        <div class="bar-container">
+                            <div class="bar">60%</div>
+                        </div>
+
+                    </div>
+                    
+                    
+
+                </div>
+               
+             
+        </div>
+           
+
+        </div>
+        <div id="project">
+            <div class="row">
+                <h3>Projects</h3>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3" >
+                        <div class="card-header text-center">Textile Management System</div>
+                        <div class="card-body">
+                          <p class="card-img-top"><img src="image/image.png" class="card-image"></p>
+                        </div>
+                      </div>
+    
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3" >
+                        <div class="card-header text-center">Collage Management System</div>
+                        <div class="card-body">
+                          <p class="card-img-top"><img src="image/cms.png" class="card-image"></p>
+                        </div>
+                      </div>
+    
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white mb-3" >
+                        <div class="card-header text-center">Portfolio</div>
+                        <div class="card-body">
+                          <p class="card-img-top"><img src="image/Portfolio.png" class="card-image"></p>
+                        </div>
+                      </div>
+    
+                </div>
+
+            </div>
+            <div id="blog">
+                <div class="row">
+                    <h3>Blog</h3>
+                    <h4 class="text-center">Still Working On ..... </h4>
+                    <!-- <div class="col-sm">
+                        <div class="card text-white mb-3" >
+                            <div class="card-header text-center">Textile Management System</div>
+                            <div class="card-body">
+                              <p class="card-img-top"><img src="image/image.png" class="card-image"></p>
+                            </div>
+                          </div>
+        
+                    </div>
+                    <div class="col-sm">
+                        <div class="card text-white mb-3" >
+                            <div class="card-header text-center">Textile Management System</div>
+                            <div class="card-body">
+                              <p class="card-img-top"><img src="image/image.png" class="card-image"></p>
+                            </div>
+                          </div>
+        
+                    </div>
+                    <div class="col-sm">
+                        <div class="card text-white mb-3" >
+                            <div class="card-header text-center">Textile Management System</div>
+                            <div class="card-body">
+                              <p class="card-img-top"><img src="image/image.png" class="card-image"></p>
+                            </div>
+                          </div>
+        
+                    </div> -->
+    
+                </div>
+            <div id="contact">
+                <h3>Contact</h3>
+                <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f8741937-ce60-4eb1-9dbc-2a96f78220df">
+                    <div class="form-group">
+                      <label for="">Name</label>
+                      <input type="text"
+                        class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="">
+                      
+                    </div><br>
+                    <div class="form-group">
+                      <label for="">Email</label>
+                      <input type="email"
+                        class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="">
+                    </div><br>
+                    <div class="form-group">
+                      <label for="">Message</label>
+                      <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                    </div><br>
+                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+             
+         
+            
+        </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#nav-toggle').click(function() {
+            $('#nav-menu').toggle();
+            $('#content').toggleClass('shifted');
+        });
+    });
+</script>
 </body>
 </html>

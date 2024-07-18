@@ -1,368 +1,418 @@
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: auto;
-  background: #708090;
-  color: white;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+
+body, div, .container, .container-fluid, ul, li, a {
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+#img {
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px  #e0e0e0;
+}
+/* .navbar-toggler-icon{
+
+    color: aqua;
+} */
+#about .row{
+    margin: 10px;
+    padding: 10px;
+    border-color: white;
+    box-shadow: 0px 0px 10px silver;
+}
+.about-image{
+    width: auto;
+    height: 200px;
+    border-radius: 30%;
+    box-shadow: 1px 1px 10px  #e0e0e0;
+}
+.navbar {
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    min-height: 60%;
+    max-height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: left 0.3s ease;
+    justify-content: safe;
+}
+
+.navbar-toggler {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: white; /* Green color */
+    border: 3px solid  cyan; /* Green color */
+    border-radius: 40%;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    box-shadow: 1px 1px 30px  #e0e0e0;
+}
+
+.navbar-toggler:hover {
+    background-color: rgb(53, 53, 229); /* Darker green for hover effect */
+    border-color: white;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+
+/* #nav-menu{
+    margin-top: -20%;
+} */
+ul {
+    
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+li a {
+    
+    display: block;
+    color:white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color:  rgb(53, 53, 229);
+    color: whitesmoke;
+}
+#content {
+    overflow-x: hidden;
+    margin-left: 25%;
+    background-color: #000;
+    width: calc(100% - 25%);
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+.image-container .overlay {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: rgb(147, 107, 107);
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+
+
+#tool{
+    margin: 3%;
+    justify-content: space-between;
+
+}
+#tool .col-sm{
+    margin-top: 10%;
+}
+h3{
+    color:whitesmoke;
+
+    text-shadow: 5px 5px 10px #e0e0e0;
+    margin-bottom: 40px;
+}
+.overlay{
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    border: 2px solid rgba(255,255,255,0.18);
+}
+
+.html .bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+ 
+
+}
+
+
+.html .bar  {
+    width: 70%; /* Change this value to reflect your proficiency */
+    height: 10px;
+    background-color: #4caf50;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px; /* Vertically centers the text */
+    color: white;
+    border-radius: 25px 0 0 25px;
+    
+}
+.javascript .bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.javascript .bar  {
+    width: 40%; /* Change this value to reflect your proficiency */
+    height: 10px;
+    background-color: #4caf50;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px; /* Vertically centers the text */
+    color: white;
+    border-radius: 25px 0 0 25px;
+}
+
+.jquery .bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.jquery .bar  {
+    width: 50%; /* Change this value to reflect your proficiency */
+    height: 10px;
+    background-color: #4caf50;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px; /* Vertically centers the text */
+    color: white;
+    border-radius: 25px 0 0 25px;
+}
+.react .bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.react .bar  {
+    width: 40%; /* Change this value to reflect your proficiency */
+    height: 10px;
+    background-color: #4caf50;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px; /* Vertically centers the text */
+    color: white;
+    border-radius: 25px 0 0 25px;
+}
+.php .bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.php .bar  {
+    width: 70%; /* Change this value to reflect your proficiency */
+    height: 10px;
+    background-color: #4caf50;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px; /* Vertically centers the text */
+    color: white;
+    border-radius: 25px 0 0 25px;
+}
+.laravel .bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.laravel .bar  {
+    width: 60%; /* Change this value to reflect your proficiency */
+    height: 10px;
+    background-color: #4caf50;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px; /* Vertically centers the text */
+    color: white;
+    border-radius: 25px 0 0 25px;
+}
+
+
+
+h4{
+   color: #04AA6D; 
+}
+
+
+
+/* Card CSS code */
+
+#project .row{
+    overflow-y:scroll;
+   
+}
+::-webkit-scrollbar{
+    visibility: inherit;
+}
+
+.card {
+    padding: 15px;
+    width: fit-content;
+    background-color: inherit;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px #e0e0e0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    box-shadow: 1px 1px 15px #c0c0c0; /* Slightly darker shadow on hover */
+    transform: translateY(-10px); /* Lifts the card slightly */
+}
+.card-header{
+    border-color:white ;
+}
+.card-image{
+    display: block;
+    width: auto;
+    height: 220px;
+    border-radius:5px ;
+}
+/* Style the form using an ID selector */
+#myForm {
+    background-color: black;
+    color: white; /* Ensure text is visible against the black background */
+    padding: 20px; /* Add some padding for better layout */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    margin: 10px;
+    box-shadow: 1px 1px 10px #e0e0e0;
+}
+
+/* Style the input fields using name selectors */
+input[name="textField"],
+input[name="emailField"],
+input[name="passwordField"],
+textarea[name="textArea"] {
+    background-color: #333; /* Dark background for inputs */
+    color: white; /* White text for inputs */
+    border: 1px solid #555; /* Darker border for inputs */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between inputs */
+    width: 100%; /* Make inputs full width */
+    box-sizing: border-box; /* Include padding and border in width */
+    border-radius: 3px; /* Optional: Add rounded corners */
+}
+
+/* Style the submit button using an ID selector */
+#submitButton {
+    background-color:black; /* Dark background for the button */
+    color: white; /* White text for the button */
+    padding: 10px 20px;
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 3px; /* Optional: Add rounded corners */
+    border: 2px solid white;
+    box-shadow: 1px 1px 20px #e0e0e0;
+}
+
+#submitButton:hover {
+   
+    background-color: rgb(143, 199, 199) ; /* Slightly lighter background on hover */
+
+    color: red;
+    border: 2px solid black;
+}
+
+
+
+/* Card Css Code end */
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        min-height:100px ;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+     
+    }
+    .image-container .overlay {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+        padding: 20px;
+        font-size: smaller;
+        font-weight: bold;
+        text-align: center;
+        z-index: 1;
+    }
+    #img {
+        margin-left: 0;
+    }
+    ul {
+        display: block;
+        width: 100%;
+    }
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+    }
+    #nav-menu {
+        width: 100%;
+    }
+    li a {
+        text-align: center;
+        padding: 10px 0;
+    }
+  
+    #content {
+        margin-left: 0%;
+        margin-top: 380px;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    h3{
+        margin-left: 5px;
+    }
+    .card{
+        width: 300px;
+    }
+    .card-image{
+        width: auto;
+        max-width: 250px;
+        height: auto;
+      
+    }
+
+
  
 }
 
-.title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.line {
-  flex: 1;
-  height: 5px;
-  background-color: #ccc;
-  
-}
-.title {
-  margin: 0 10px;
-  font-size: 40px;
-  color: #333;
-}
-
-.re{
-  font-size: 32px;
-}
-
-.title{
-  color: #E0AC69;
-  font-size: 50px;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  margin: 0;
-  padding: 0;
-  
-}
-
-.navbar-menu {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  background-color: #333;
-  margin: 0;
-}
-
-.navbar-menu li {
-  text-align: center;
-}
-
-.navbar-menu li a {
-  display: block;
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: 1.2s;
-  font-size: 30px;
-  
-}
-
-.navbar-menu li a:hover {
-  color: #E0AC69;
-  text-decoration: underline;
-  transform: scale(1.25);
-}
-
-
-
-section {
-  padding: 2rem;
-  margin-top: 60px; /* Offset for fixed navbar */
-
-}
-
-.container-fluid {
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-#home {
-  text-align: center;
-}
-
-.intro {
-  text-align: justify;
-  font-size: 40px;
-
-
-}
-
-.col-md-6.intro {
-  padding-top: 180px;
-}
-
-#btn {
-  color: brown;
-  border-color: #E0AC69;
-  border-width: 2px;
-  transition: 0.5s;
-}
-
-#btn:hover {
-  background-color: #333;
-  color: white;
-  font-size: large;
-}
-
-#img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-
-#about {
-  color: white;
-  margin: 20px auto;
-  border-radius: 8px;
-  font-size: 22px;
-  text-align:justify;
-}
-
-.img {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-
-#pro-title {
-  margin: 10px;
-  text-align: center;
-  color: white;
-}
-
-#projects .col-sm .card {
-  background-color: #333;
-  transition: background-color 0.20s; /* Transition for background color change */
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  font-size: 22px;
-}
-
-table th, table td {
-  border: 1px solid white;
-  padding: 10px;
-}
-
-#table-info {
-  margin-top: 30px;
-  overflow-x: auto;
-}
-
-#technology .row .card{
-  width: auto;
-  height: 150px;
-  margin:10px;
-  padding:10px;
-  text-align: center;
-  transition: background-color 0.3s ease-out; 
-}
-#technology .row .card:hover{
-  background-color: #E0AC69;
-}
-#technology img{
-  height:100px;
-  width: auto;
-  border-radius: 10px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-#technology .row .card h4{
-  padding-top: 10px;
-  padding-bottom: 0px;
-}
-
-/* Style for cards */
-.card {
-  width: 100%;
-  height: auto;
-  padding: 40px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: justify;
-  background-color: #333;
-  color: white;
-  font-size: 22px;
-}
-
-/* Style for the heading */
-.h2 {
-  margin-top: 0;
-  color: #E0AC69;
-}
-.social-media-links {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  background-color: #333;
-  padding: 10px;
-}
-
-.social-media-links a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  margin: 5px 0;
-  text-align: center;
-  background-color: #555;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-  font-size: 24px;
-}
-
-.social-media-links a:hover {
-  background-color: #777;
-}
-
-.content {
-  margin-left: 70px; /* Adjust this value based on the width of the social media links section */
-  padding: 20px;
-}
-
-#nav-toggle {
-  display: none;
-}
-
-
-@media (max-width: 768px) {
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
-  
-
-  .re{
-    font-size: 22px;
-  }
-  
-  .title{
-    color: #E0AC69;
-    font-size: 30px;
-  }
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: black;
-  }
-
-  #nav-toggle {
-    display: block;
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 100%;
-    text-align: center;
-  }
-
-  section {
-    padding: 1rem;
-    width: 100%;
-  }
-
-  .container-fluid {
-    width: 100%;
-    margin: 0px;
-    margin-left: 30px;
-    overflow: hidden;
-  }
-
-  .intro {
-    margin-left: 30px;
-    padding: 0;
-    font-size: 22px;
-  }
-
-  .row {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .card {
-    padding: 20px;
-  }
-
-  table {
-    width: 100%;
-    table-layout: auto;
-  }
-
-  table th, table td {
-    padding: 5px;
-    white-space: nowrap; /* Prevent content from wrapping */
-  }
-
-  table th {
-    padding-bottom: 10px; /* Add extra space below th */
-  }
-
-  table tr {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px; /* Add space between table rows */
-  }
-
-  table tr:not(:last-child) {
-    margin-bottom: 10px; /* Add space between table rows except the last one */
-  }
-
-  .about {
-    padding: 20px;
-    margin: 10px auto;
-  }
-}
-
-
-
-#nav-toggle:checked + .navbar-menu {
-  display: flex;
+@media (min-width: 1025px) {
+    .navbar {
+        left: 0;
+    }
 }
